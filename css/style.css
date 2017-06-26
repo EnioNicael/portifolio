@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+}
+
+img {
+    width: 100vw;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.topo {
+    margin-top: 10px;
+}
+
+.linha {
+    border-bottom: 4px solid #9e9e9e;
+    padding-bottom: 10px;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.w {
+    transition: width 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .w {
+        width: 50vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-destaque {
+    color: #7d97ad;
+    font-size: 2em;
+}
+
+.text-intro {
+    font-size: 1.5em;
+}
+
+.text-list {
+    font-size: 1.2em;
+}
+
+.apresentacao-style {
+    margin-top: 10px;
+    background: url(../img/fundo-small.jpg);
+    background-size: cover;
+    color: #bcbbbb;
+}
+
+.footer-style {
+    background-color: #aaaaaa;
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+.redes-sociais {
+    padding-right: 10px;
+}
+
+.facebook-color {
+    color: #3b5998;
+}
+
+.facebook-color:hover {
+    background-color: #3b5998;
+    color: white;
+    text-decoration: none;
+}
+
+.twitter-color {
+    color: #00aced;
+}
+
+.twitter-color:hover {
+    background-color: #00aced;
+    color: white;
+    text-decoration: none;
+}
+
+.googleplus-color {
+    color: #dd4b39;
+}
+
+.googleplus-color:hover {
+    background: #dd4b39;
+    color: white;
+    text-decoration: none;
+}
