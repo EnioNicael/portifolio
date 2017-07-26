@@ -1,10 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     color: #2d3c49;
 }
 
 img {
-    width: 100vw;
     max-width: 100%;
 }
 
@@ -15,7 +19,42 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/*sistema de grade*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colum-logo {
+    width: 25%;
+}
+
+.colum-text-header {
+    width: 75%;
+}
+
+.colum-completa {
+    width: 100%;
+}
+
+.colum-perfil {
+    width: 100%;
+}
+
+.colum-texto {
+    width: 100%;
+}
+
+.colum-projetos {
+    width: 100%;
+}
+/*efeitos*/
 .topo {
     margin-top: 10px;
 }
@@ -29,23 +68,33 @@ a:hover {
     font-weight: 100;
 }
 
-.w {
-    transition: width 0.5s;
-}
-
-@media screen and (max-width: 768px) {
-    .w {
-        width: 50vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.text-right {
+    text-align: right;
 }
 
 .img-center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+.img-border {
+    border: 1px solid #ddd;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title-super {
+    font-size: 2em;
+}
+
+.espaco {
+    margin: 0.2em 0;
 }
 
 .texto-destaque {
@@ -61,9 +110,17 @@ a:hover {
     font-size: 1.2em;
 }
 
+.text-align {
+    vertical-align: middle;
+}
+
+.text-padding {
+    padding: 0 0.5em;
+}
+
 .apresentacao-style {
     margin-top: 10px;
-    background: url(../img/fundo-small.jpg);
+    background: url(../img/fundo.jpg);
     background-size: cover;
     color: #bcbbbb;
 }
@@ -112,4 +169,36 @@ a:hover {
     background: #dd4b39;
     color: white;
     text-decoration: none;
+}
+/* media queries */
+@media screen and (min-width: 641px) {
+    .colum-logo {
+        width: 50%;
+    }
+    .colum-text-header {
+        width: 50%;
+    }
+
+    .colum-perfil {
+        width: 25%;
+    }
+
+    .colum-texto {
+        width: 75%;
+    }
+
+    .colum-projetos {
+        width: 33.33%;
+    }
+
+    .title-super {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
 }
